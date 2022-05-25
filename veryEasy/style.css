@@ -1,0 +1,18 @@
+.chesssboard {
+  display: grid;
+  grid-template-columns: repeat(9, 50px);
+  grid-template-rows: repeat(8, 50px);
+  justify-content: center;
+  margin-left: 50px;
+  margin-bottom: 100px;
+}
+.chesssboard div {
+  border: 1px solid black;
+}
+.chesssboard div:nth-child(odd) {
+  background-color: black;
+}
+.chesssboard div:nth-child(9n + 0) {
+  background-color: white;
+  border: none;
+}
